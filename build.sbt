@@ -1,4 +1,6 @@
-val scalaV = "2.12.2"
+val scalaV = "2.12.8"
+
+import sbtcrossproject.CrossPlugin.autoImport.{crossProject, CrossType}
 
 lazy val server = (project in file("server")).settings(
   scalaVersion := scalaV,
